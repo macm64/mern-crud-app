@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server-api": "PORT=3001 nodemon src/api/index.js",
+    "server-api": "nodemon src/api/index.js",
     "server-hot-dev": "babel-node server.js ",
     "webpack": "webpack --env.development --mode=development --watch",
     "dev-mode": "npm run webpack"

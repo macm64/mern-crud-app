@@ -6,7 +6,7 @@ const {mongoose} = require('./database');
 //Application
 const app = express();
 //Settings
-app.set('port',process.env.PORT ||3000);
+app.set('port',process.env.PORT ||3001);
 
 //Middlewares
 app.use(morgan('dev'));
@@ -17,6 +17,6 @@ app.use('/api/contact/', require('./routes/contact.routes'));
 //Static files
 app.use(express.static(path.join(__dirname,'../../public')));
 
-app.listen(app.get('port'), ()=>{
+app.listen((process.env.PORT ||3001), ()=>{
   console.log(`Connected at port ${app.get('port')}`);
 })
