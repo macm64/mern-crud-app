@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose');
 
-mongoose.connect(process.env.dbURI)
+mongoose.connect(process.env.MONGODB_URI)
   .then((db)=>{
     console.log('DB connected')
   })
