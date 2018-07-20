@@ -20158,7 +20158,7 @@ var App = function (_Component) {
             _react2.default.createElement(
               'a',
               { className: 'brand-logo', href: '/' },
-              'MERN Stack CRUD Simple Contact Form'
+              'MERN Stack CRUD Simple Form'
             )
           )
         ),
